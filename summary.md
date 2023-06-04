@@ -5,7 +5,7 @@
 - Complex systems
 - Interaction between components
 - Creativity of attackers
-- Security vs. Usabillity
+- Security vs. Usability
 
 ### Security
 
@@ -54,7 +54,7 @@
 - Sharing keys can be problematic
 
 ### Asymmetric Cryptography
-- Encoding with pubilc key -> only private key can decode
+- Encoding with public key -> only private key can decode
 - Signing with private key -> can be decoded with public key
 - Requires more computing resources
 
@@ -62,8 +62,8 @@
 - Encode document with symmetric key
 - Encode symmetric key with asymmetric key
 - Send encrypted document and symmetric key
-- Decrypt symmetric key with asymetic key
-- Decrypt document with symmetic key
+- Decrypt symmetric key with asymmetric key
+- Decrypt document with symmetric key
 
 ### Challenges
 - Methods are complex
@@ -88,7 +88,7 @@
 
 #### Directory Service (DIR)
 - Manages access to public certificates
-- Multiple connetors possible (LDAP, OCSP)
+- Multiple connectors possible (LDAP, OCSP)
 
 #### Certificate Revocation
 - Handles the case, when a private key is compromised
@@ -97,8 +97,8 @@
 - Applications need to check the validity of received certificates
 
 #### Time Stamp Services (TSA)
-- Ensures the ihtegrity of time information
-- Client sends hash of document -> TSA adds timestamp and signs combination -> client adds timestamp to document
+- Ensures the integrity of time information
+- Client sends hash of document -> TSA adds time stamp and signs combination -> client adds time stamp to document
 
 #### Hierarchical Structure
 - Tree of CAs
@@ -111,8 +111,71 @@
 - Validity models: chain model, peel model and hybrid models
  
 ### Transport Layer Security (TLS)
-- For one or two directional authentification and encrytped communication
+- For one or two directional authentication and encrypted communication
 - Encryption only on Layer 4 possible
 - Replaced SSL
 - HTTPS = HTTP over TLS
 - Cipher Suite: Defines the cryptographic methods for communication, which gets negotiated between both partners
+
+## Network Security
+
+### TCP/IP model:
+- Application Layer (HTTP)
+- Transport Layer (TCP, UDP)
+- Network Layer (IP)
+- Data Link Layer (Ethernet)
+- Physical Layer (LAN)
+
+### Example Attacks
+
+#### ARP - Address Resolution Protocol
+- Translates between hardware and IP addresses
+- Spoofing: Man in the Middle can catch and alter ARP messages
+
+#### IP - Internet Protocol
+- Address Spoofing: Changing source and destination address in IP header
+
+#### ICMP - Internet Control Message Protocol
+- Smurf attack: Attacker can use smurf machines to overwhelm target with ICMP requests
+
+#### TCP - Transmission Control Protocol
+- SYN Flooding: Target gets overwhelmed by SYN requests
+
+### WLAN
+- Potentially unsafe networks
+- Attacks: Sniffing, Spoofing of access point or client, DoS
+
+#### Safety measurements
+General:
+- No WEP (unsafe)
+- Good passwords for WPA, WPA2 
+- WPA3
+- VPNs
+- Application layer encryption
+- Change default passwords
+- SSID
+- Change keys regularly
+
+Sniffing:
+- Network segmentation
+- Securing the transport (VPN, TLS)
+- Limiting access (Firewall)
+- Encryption of data
+- Intrusion detection systems
+
+### Firewalls
+- Goal: Restricting un-allowed access
+- Types: packet filtering, stateful inspection, proxy firewall
+- Placement: at network borders
+
+### Intrusion Detection Systems
+- Detection of attacks (signatures, anomalies)
+- Sending alarms
+- E.g. Snort, Zeek
+- Intrusion Prevention System: Additionally enact countermeasures (e.g. activation of firewall rules)
+
+### Honeypots
+- Fake instance of real system
+- Are an complementary safety mechanism
+- Honeynet = network of honeypots
+
