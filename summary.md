@@ -281,3 +281,41 @@ Challenges:
 - Technical implementation
 - Technical seperation
 
+## Security in Software Development
+
+Development methods for secure software:
+- Comprehensive LIghtweight Application Security Process (CLASP)
+- Microsoft Security Deveopment LIfecycple (SDL)
+- Software Assurance Maturity Model (SAMM)
+
+### Analysis Phase
+- Requirements:
+    - Functional and non-functional
+    - Stakeholders
+    - Norms, laws and standards
+- Determination of:
+    - Threats and risks
+    - Attack vectors
+    - Safety targets
+- Tools:
+    - Attack Tress: Representation of events as tree, with edges as probabilities
+    - Threat Modeling: Identifying threats by "thinking as the attacker"
+
+### Drafting Phase
+- Robust architecture as foundation
+- Best practices:
+    - Security Patterns: of common security challenges
+    - Attack Patterns: Description of attacks and conditions
+    - UML Modelling: e.g. UMLsec
+
+#### Design Principles
+- Simplicity
+- Fail-safe defauls: Each default state should be secure; Return to default state if attack
+- Complete access validation (Complete Meditation)
+- Open Design: Security should not rely on secrecy
+
+TODO: Continue
+
+
+
+
