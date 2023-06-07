@@ -179,3 +179,105 @@ Sniffing:
 - Are an complementary safety mechanism
 - Honeynet = network of honeypots
 
+## Identity, Authentification, Access Controll
+
+### Authentification Methods
+
+#### Categories
+- Knowledge:
+    - Passwords
+    - PINs
+- Ownership
+    - Tokens
+    - Chip cards
+- Biometric
+    - Fingerprint
+    - Voice
+
+#### Passwords
+
+Rules:
+- No defaults
+- Never write down
+- Changeable by user
+- Restrict number of trails
+- Handling forgotten passwords
+
+Attacks:
+- Guess
+- Brute force
+- Dictionalry attacks
+- Rainbow tables
+- Social Engineering, Phishing
+- Observation
+- Passwords in script files
+- Sniffing (e.g. bluetooth keyboard)
+
+Security Measurements:
+- Never store unencrypted
+- Usage of sepecific hashing algorithms
+- Pro-active password checking
+- User training
+- Lockout mechanisms
+- Password changes after security incidents
+- Password safes
+
+#### Chip cards
+- Ownership
+- Usage of kryptographic keys
+- Private key never leaves card
+- Usage: banks, healthcare
+
+Attacks:
+- Social engineering
+- Man in the Middle
+- Side channel attacks
+- Physical
+
+#### Biometric
+- Biological property
+- Hard to replace
+- Hard to pass on
+- Not perfect accuracy (False Acceptance Rate, False Rejection Rate)
+- More expensive
+- Can work worse for sepecific people
+
+Attacks:
+- Not 100% safe
+- Spoofing
+- Replay attacks
+- Bypassing of sensors
+- Brute force
+
+#### FIDO2 - Fast Identity Online 2
+- W3C as web API
+TODO: Finish
+
+#### Access Control
+- Deny access of unwanted actors or at least detect
+- Key Question: Hwo can access what and how?
+- Auditioning
+- Implementaiton of a security policy
+- Usage: OS, databases, web servers
+
+Dicretionary Access Controll (DAC):
+- Each object has an owner
+- Owner manages access
+
+Role-Based Access Control (RBAC)
+- Access determined by roles
+- Users have roles
+
+Mandatory Access Control (MAC)
+- Objects and users have assigned rights
+- Access only possible if rights of user are at least equal to object
+- Usage: Military
+
+Challenges:
+- Concept of Least Priviledge
+- Single Sign On
+- Who manages access control?
+- Where is access checked?
+- Technical implementation
+- Technical seperation
+
