@@ -206,7 +206,7 @@ Rules:
 Attacks:
 - Guess
 - Brute force
-- Dictionalry attacks
+- Dictionary attacks
 - Rainbow tables
 - Social Engineering, Phishing
 - Observation
@@ -215,7 +215,7 @@ Attacks:
 
 Security Measurements:
 - Never store unencrypted
-- Usage of sepecific hashing algorithms
+- Usage of specific hashing algorithms
 - Pro-active password checking
 - User training
 - Lockout mechanisms
@@ -224,7 +224,7 @@ Security Measurements:
 
 #### Chip cards
 - Ownership
-- Usage of kryptographic keys
+- Usage of cryptographic keys
 - Private key never leaves card
 - Usage: banks, healthcare
 
@@ -240,7 +240,7 @@ Attacks:
 - Hard to pass on
 - Not perfect accuracy (False Acceptance Rate, False Rejection Rate)
 - More expensive
-- Can work worse for sepecific people
+- Can work worse for specific people
 
 Attacks:
 - Not 100% safe
@@ -274,18 +274,18 @@ Mandatory Access Control (MAC)
 - Usage: Military
 
 Challenges:
-- Concept of Least Priviledge
+- Concept of Least Privilege
 - Single Sign On
 - Who manages access control?
 - Where is access checked?
 - Technical implementation
-- Technical seperation
+- Technical separation
 
 ## Security in Software Development
 
 Development methods for secure software:
-- Comprehensive LIghtweight Application Security Process (CLASP)
-- Microsoft Security Deveopment LIfecycple (SDL)
+- Comprehensive Lightweight Application Security Process (CLASP)
+- Microsoft Security Development Lifecycle (SDL)
 - Software Assurance Maturity Model (SAMM)
 
 ### Analysis Phase
@@ -310,12 +310,96 @@ Development methods for secure software:
 
 #### Design Principles
 - Simplicity
-- Fail-safe defauls: Each default state should be secure; Return to default state if attack
+- Fail-safe defaults: Each default state should be secure; Return to default state if attack
 - Complete access validation (Complete Meditation)
 - Open Design: Security should not rely on secrecy
+- Separation of Privilege (4-Augen-Prinzip)
+- Least Privilege: Don't allow more right than necessary
+- Least Common Mechanism: Avoid shared variables/files
+- Psychological Acceptability: Simple usability
 
-TODO: Continue
+### Implementation Phase
+To make code safe:
+- Avoid common security mistakes 
+- Follow programming guidelines
+- Follow language specific security methods
+- Use code review
+- Avoid Penetrate and Patch
 
+#### Attacks
+- SQL injection
+- Command injection
+- Cross-Site-Scripting: Inputs put into DOM -> Script insertion
+    - Reflected XSS: Attacker sends manipulated link
+    - Stored XSS: Attacker changes the server itself
+- Cross-Site-Request-Forgery: TODO: Explain
+- Buffer Overflows
 
+### Production Phase
+- Detection of incidents
+- Reactive countermeasures
+- Service Level Agreement (SLA)
+- Information Technology Infrastructure Library (ITIL)
 
+## Testing
+- Validation: Do we build the correct product?
+- Verification: Do we build the product correct?
 
+### Characteristics (Merkmalsräume)
+
+#### Testing criterion
+- Question: What gets tested?
+- Functional tests: Specification/Use cases as basis, Independent
+- Non-functional tests: Abuse cases as basis, Not independent
+
+#### Testing layer
+- Question: Which phase of the life cycle gets tested
+- Earlier is better but mistakes can be more severe
+- Abuse cases: In drafting phase
+- Static code analysis: In implementation phase
+- Penetration tests: In deployment phase
+- Risk analysis: In design and deployment phase
+
+#### Testing Methodology
+- Question: Which testing methods should be used
+- White-Box-Tests: Use system knowledge
+- Black-Box-Tests: Don't use system knowledge, just check inputs/outputs
+- Gray-Box-Tests: Combination both
+
+### Techniques
+
+#### Static Code Analysis
+- Check code without running, Manual or Automatic (Compiler)
+- Secure code review: Expensive but effective
+- Automatic analysis: 
+    - Signature based: Check for patterns
+    - Control flow based: Check execution order
+    - Data flow based: ?
+
+#### Fuzzing
+- Test randomly generated inputs
+- For different formats/protocols
+- Distinction:
+    - Input creation: Generation based vs Mutation based
+    - Smartness: Random vs Template vs Block vs Evolution based
+- Error detection: Changes in performance, log entries, ...
+
+#### Penetration Testing
+- Testing under "real" conditions
+- Showing weaknesses on the running system
+- Late in life cycle (expensive to fix)
+- Phases:
+    - Pre-Engagement
+    - Intelligence Gathering
+    - Threat Modelling
+    - Vulnerability Analysis
+    - Exploitation
+    - Post-Exploitation
+    - Reporting
+
+#### Ethical Hacking
+- Finding weaknesses without exploitation for personal profit
+
+### Vulnerability Disclosure
+- Responsible Disclosure: Only tell company and wait for a while for them to fix it
+- Full Disclosure: Tell public as soon as possible to make sure everyone is aware and company is under pressure to fix it
