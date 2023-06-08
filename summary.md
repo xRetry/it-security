@@ -403,3 +403,50 @@ To make code safe:
 ### Vulnerability Disclosure
 - Responsible Disclosure: Only tell company and wait for a while for them to fix it
 - Full Disclosure: Tell public as soon as possible to make sure everyone is aware and company is under pressure to fix it
+
+## Organisational Security
+
+### Security Measurements
+- Teaching employees
+- Regular backups
+- Safe deletion of sensible data
+- Updates
+- Documentation of processes, security requirements, configurations, service numbers, SLAs, user rights, ...
+- Definition of a IT security manager
+
+### Security Policy
+- Contains IT Goals and security strategy and prescriptions (How to handle specific components)
+- Employees are one of the biggest risks
+- Continuous updates
+
+### Security Management Process (PDCA)
+- Plan: Create security policy/management
+- Do: Implement the policies and collect data/information
+- Check: Regularly perform tests, audits, exercises and create reports
+- Act: Identify issues and update the policies/management accordingly
+
+### Norms and Standards
+- Certifications allow trust in IT security
+- Can be basis contracts
+
+#### ISO 27k Series
+- Selection of appropriate security checks
+- Everything related to ISMS
+
+#### Information Technology Infrastructure Library (ITIL)
+- Based on ISO 27001
+- Best practices
+- Guidelines and how to implement them
+- Process oriented
+
+#### IT-Grundschutz
+
+### IT Security Concept
+- Contents: Measures to implement and maintain a defined security level
+- What do I want to protect?
+- Against whom?
+- How?
+- Can I afford that?
+
+### Business Continuity
+- Measures to allow business to continue in case of an active threat
