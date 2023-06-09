@@ -450,3 +450,32 @@ To make code safe:
 
 ### Business Continuity
 - Measures to allow business to continue in case of an active threat
+
+## Risk Management
+
+### Risk Management Process
+Steps:
+- Preparation: Determination of responsibilities, risk tolerance and analysis methods
+- Risk identification
+- Risk evaluation: Estimation of severity and frequency
+- Risk handling: Acceptance, avoidance, mitigation, transfer
+- Risk control: Continous analysis, documtation and reporting to leadership
+
+### IT Grundschutz
+
+#### Initialization
+- Responsibility
+- Panning the approach
+- Creating guidelines
+
+#### Organization
+- Integration in processes
+- Distribution of responsibilties and roles
+
+#### Documentation
+- Classification of information
+- Reports to leadership
+
+#### Security Concepts
+
+#### Implementation
