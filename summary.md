@@ -145,7 +145,7 @@
 - Potentially unsafe networks
 - Attacks: Sniffing, Spoofing of access point or client, DoS
 
-#### Safety measurements
+#### Safety measures
 General:
 - No WEP (unsafe)
 - Good passwords for WPA, WPA2 
@@ -477,5 +477,17 @@ Steps:
 - Reports to leadership
 
 #### Security Concepts
+- Basic Protection: Implementation of basic requirements
+- Core Protection: Focus on essential assets first
+- Standard Protection: Complete implementation of the IT Grundschutz
+
+- IT Grundschutz Check: Soll-Ist Vergleich + Dokumentation
 
 #### Implementation
+- Cost-value estimation
+- Determination of implementation order
+- Implementation related measures
+
+#### Maintenance and Improvement
+- Monitoring the implementation
+- Re-evalutation of the strategy
