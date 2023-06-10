@@ -491,3 +491,14 @@ Steps:
 #### Maintenance and Improvement
 - Monitoring the implementation
 - Re-evalutation of the strategy
+
+## Factor Human
+- Interdisciplinary cybersecurity approach
+- Identification of a wider set of vulnerabilities
+- Allows the creation of a trusworthy digital environment
+
+### Threats
+- Malicious insider
+- Phishing
+- Identity spoofing
+- Social engineering
