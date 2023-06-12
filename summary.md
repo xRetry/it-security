@@ -41,8 +41,8 @@
 
 ..contains:
 
-- Thread groups (target, source, motivation, probability, costs)
-- Threads
+- Threat groups (target, source, motivation, probability, costs)
+- Threats
 - Risk analysis/evaluation
 - Actions
 - Estimation of rest risk
